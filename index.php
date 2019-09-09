@@ -24,7 +24,7 @@
 
  	<div class="container">
     <div class="jumbotron dark-bg">
-		<h3 class="text-center pb-2">Összes pénz: <span id="total-money"></span> Ft</h3>
+		<h3 class="text-center pb-2">Összes pénz: <br><span id="total-money"></span> Ft</h3>
 		<hr>
 	<!-- Adatok felvétele -->
 		<form action="" method="POST" id="kalkulator">
@@ -34,7 +34,7 @@
 				<input type="text" name="item" id="item" class="form-control">
 			  </div>
 	        </div>
-            <br>
+      
 	        <div class="row justify-content-center ">
 	        	<div class="form-group col-xs-3">
 		            <label>Összeg: </label>
