@@ -34,7 +34,7 @@
 				<input type="text" name="item" id="item" class="form-control">
 			  </div>
 	        </div>
-		<br>
+            <br>
 	        <div class="row justify-content-center ">
 	        	<div class="form-group col-xs-3">
 		            <label>Összeg: </label>
