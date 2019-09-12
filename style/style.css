@@ -4,6 +4,10 @@
   margin: 2rem;
 }
 
+.hiddenBtns{
+    display: none;
+}
+
 form{
  text-align: center;
 }
@@ -16,11 +20,15 @@ hr{
 	cursor: pointer;
 }
 
+.item-edit{
+  cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
   .mt {
     margin-top: 3rem;
   }
-} 
+}
 
 
 
