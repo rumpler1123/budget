@@ -24,7 +24,7 @@ function pluszLista() {
 
 					html += `<tr class="${id}">
 				<td id="tdItem-${id}">${item}</td>
-				<td id="tdMoney-${id}">${numberWithCommas(money)} Ft .</td>
+				<td id="tdMoney-${id}">${numberWithCommas(money)} Ft</td>
 				<td>
 				<i class="item-edit fas fa-edit pr-1 text-warning"></i>
 
