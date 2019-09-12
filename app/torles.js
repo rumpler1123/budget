@@ -1,38 +1,37 @@
 // rekord torlese / AJAX EVENT
 const allTableItem = document.querySelectorAll('.allTable');
 
-for(let i = 0; i < allTableItem.length; i++){
-	allTableItem[i].addEventListener('click', function(e){
-		if(e.target.classList.contains('fa-times')){
+for (let i = 0; i < allTableItem.length; i++) {
+	allTableItem[i].addEventListener('click', function (e) {
+		if (e.target.classList.contains('fa-times')) {
 			// törlés megerősítése
 			var c = confirm("Biztosan törölni akarod?");
-			if(c){
-					
-		 // xhr
-		 // Változók felvétele
-		 var http = new XMLHttpRequest();
-		 var url = 'delete.php';
-		 const id = "id="+e.target.id;
+			if (c) {
 
-		http.open('POST', url, true);
+				// xhr
+				// Változók felvétele
+				var xhr = new XMLHttpRequest();
+				var url = 'delete.php';
+				const id = "id=" + e.target.parentNode.parentNode.className;
 
-		http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+				xhr.open('POST', url, true);
 
-		http.onreadystatechange = function() {
-		//Call a function when the state changes.
-		    if(http.readyState == 4 && http.status == 200) {
+				xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
-		       minuszLista();
-		       pluszLista();
-		       totalMoney();
-		    }
+				xhr.onreadystatechange = function () {
+					//Call a function when the state changes.
+					if (xhr.readyState == 4 && xhr.status == 200) {
+						// Listazas 
+						minuszLista();
+						pluszLista();
+						totalMoney();
+					}
+				}
+
+				xhr.send(id);
+				e.preventDefault();
+			}
 		}
-
-
-		http.send(id);
-		e.preventDefault();
-		}
-	}
 	});
 }
 
