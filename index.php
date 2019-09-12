@@ -26,7 +26,7 @@
 
   <div class="container">
     <div class="jumbotron dark-bg">
-      <h3 class="text-center pb-2">Összes pénz: <span id="total-money"></span> Ft</h3>
+      <h3 class="text-center pb-2">Összes pénz: <br><span id="total-money"></span> Ft</h3>
       <hr>
       <!-- Adatok felvétele -->
       <form action="" method="POST" id="kalkulator">
@@ -121,7 +121,7 @@
   <script type="text/javascript" src="app/minuszlista.js"></script>
   <script type="text/javascript" src="app/pluszlista.js"></script>
   <script type="text/javascript" src="app/osszesPenz.js"></script>
-  <script type="text/javascript" src="app/update.js"></script>
+  <!--<script type="text/javascript" src="app/update.js"></script> -->
 </body>
 
 </html>
