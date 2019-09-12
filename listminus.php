@@ -16,9 +16,8 @@ if(mysqli_num_rows($result) > 0) {
 		if ($row["kiadas_tipusa"] == 2){
 		array_push($data, $row)	;
 
+		}
 	}
-}
-
 }
 echo json_encode($data);
 mysqli_close($conn);

@@ -20,9 +20,7 @@ if ($type == 2) {
 
 
 // Rekord felvétele
-if(mysqli_query($conn, $sql)){
-
-}
+if(mysqli_query($conn, $sql))
 
 //  adatábis kapcsolat bezárása
 mysqli_close($conn);
