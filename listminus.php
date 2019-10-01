@@ -5,9 +5,11 @@ if(!$conn)  {
 	die ("Kapcsolódási hiba: " . mysqli_connect_error());
 }
 
-$sql = "SELECT * FROM kiadas";
-$result = mysqli_query($conn, $sql);
 $data = [];
+$m = date("m");
+
+$sql = "SELECT * FROM kiadas WHERE kiadas_datuma > '2019-$m-01'";
+$result = mysqli_query($conn, $sql);
 
 if(mysqli_num_rows($result) > 0) {
 
