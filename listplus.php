@@ -7,7 +7,7 @@ if(!$conn)  {
 $data = [];
 $m = date("m");
 
-$sql = "SELECT * FROM kiadas WHERE kiadas_datuma > '2019-$m-01'";
+$sql = "SELECT * FROM kiadas WHERE kiadas_datuma > '2020-$m-01'";
 $result = mysqli_query($conn, $sql);
 
 
